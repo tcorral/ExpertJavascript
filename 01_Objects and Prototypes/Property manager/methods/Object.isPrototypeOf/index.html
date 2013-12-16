@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Check prototype of object created using literal:', Object.prototype.isPrototypeOf(obj));
+        console.log('Check prototype of object created using Object.create(Array.prototype):', Array.prototype.isPrototypeOf(obj2));
+        console.log('Check prototype of fat arrow functions (only in Firefox):', Function.prototype.isPrototypeOf(obj3));
+    </script>
+</body>
+</html>

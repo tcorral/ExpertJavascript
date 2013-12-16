@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Use Object.is to check if "true" is equals to "true":', Object.is(sTrue, sTrue));
+        console.log('Use Object.is to check if "True" is equals to "true":', Object.is(sTrueM, sTrue));
+        console.log('Use Object.is to check if an autoexecuted function is equals to true:', Object.is((function(){}()), true));
+        console.log('Use Object.is to check if undefined is equals to Math.prototype:', Object.is(undefined, Math.prototype));
+        console.log('Use strict operator to check if NaN is equals to 0/0:', NaN === 0/0);
+        console.log('Use Object.is to check if NaN is equals to 0/0:', Object.is(NaN, 0/0));
+    </script>
+</body>
+</html>

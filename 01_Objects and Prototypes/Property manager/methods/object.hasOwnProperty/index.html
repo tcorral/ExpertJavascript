@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.group('Get all the properties in bar');
+        for(var property in bar){
+            console.log(property);
+        }
+        console.groupEnd('Get all the properties in bar');
+        var myProps = Object.getOwnPropertyNames(bar).map(function(property){
+            return bar.hasOwnProperty(property) ? property : undefined;
+        });
+        console.log('Get only own properties of bar object:', myProps);
+    </script>
+</body>
+</html>

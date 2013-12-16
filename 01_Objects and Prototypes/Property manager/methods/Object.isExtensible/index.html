@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Is car object extensible?', Object.isExtensible(car));
+        console.log('Prevent car extension');
+        Object.preventExtensions(car);
+        console.log('Is car object extensible?', Object.isExtensible(car));
+    </script>
+</body>
+</html>

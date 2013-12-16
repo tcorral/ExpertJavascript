@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Get prototype of object created using literal:', Object.getPrototypeOf(obj));
+        console.log('Get prototype of object created using Object.create(Array.prototype):', Object.getPrototypeOf(obj2));
+        console.log('Object.getPrototype(obj) is equals to Object.prototype?', Object.getPrototypeOf(obj) === Object.prototype);
+        console.log('Object.prototype is equals to obj.__proto__?', Object.prototype === obj.__proto__);
+    </script>
+</body>
+</html>

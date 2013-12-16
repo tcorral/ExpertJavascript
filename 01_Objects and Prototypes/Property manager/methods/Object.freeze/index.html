@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Check if bombProp is frozen:', Object.isFrozen(bombProp));
+        console.log('Freeze bombProp object');
+        Object.freeze(bombProp);
+        console.log('Can I delete flavors property of bombProp?', delete bombProp.flavors);
+        console.log('Check if bombProp is frozen:', Object.isFrozen(bombProp));
+    </script>
+</body>
+</html>

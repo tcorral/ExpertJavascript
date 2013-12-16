@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Get the value of car.doors:', car.doors);
+        console.log('Prevent car of extensions');
+        Object.preventExtensions(car);
+        console.log('Check if car is extensible:', Object.isExtensible(car));
+        console.log('Get the value of car.doors:', car.doors);
+        console.log('Can I delete doors property of car?', delete car.doors);
+        console.log('Get the value of car.doors:', car.doors);
+        console.log('Trying to add a new tires property to car object');
+        car.tires = 4;
+        console.log('Get the value of car.tires:', car.tires);
+    </script>
+</body>
+</html>

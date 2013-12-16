@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Execute tabbyCat.speak and get the value:', tabbyCat.speak());
+        console.log('What is the value of tabbyCat.prototype?', tabbyCat.prototype);
+        console.log('Modify tabbyCat.prototype to get new Dog()');
+        tabbyCat.prototype = new Dog();
+        console.log('Get tabbyCat.prototype:', tabbyCat.prototype);
+        console.log('Execute tabbyCat.speak and get the value:', tabbyCat.speak());
+        console.log('What is the value of tabbyCat.__proto__?', tabbyCat.__proto__);
+        console.log('Modify tabbyCat.__proto__ to get new Dog()');
+        tabbyCat.__proto__ = new Dog();
+        console.log('Get tabbyCat.__proto__:', tabbyCat.__proto__);
+        console.log('Execute tabbyCat.speak and get the value:', tabbyCat.speak());
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Get value of tesla:', tesla.valueOf());
+        console.log('Overwrite Car.prototype.valueOf to return this.name.');
+        Car.prototype.valueOf = function() {
+          return this.name;
+        };
+        console.log('Get value of tesla:', tesla.valueOf());
+    </script>
+</body>
+</html>

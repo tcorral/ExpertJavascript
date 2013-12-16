@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.group('Loop over enumerable properties in car');
+        for(var property in car)
+        {
+            console.log(property);
+        }
+        console.groupEnd('Loop over enumerable properties in car');
+        console.log('Property keys in car:', Object.keys(car));
+        console.log('Own property names of car:',Object.getOwnPropertyNames(car));
+        console.log('Is enumerable secretTrackingDeviceEnabled?', car.propertyIsEnumerable('secretTrackingDeviceEnabled'));
+        console.log('Value of car.secretTrackingDeviceEnabled:', car.secretTrackingDeviceEnabled);
+    </script>
+</body>
+</html>

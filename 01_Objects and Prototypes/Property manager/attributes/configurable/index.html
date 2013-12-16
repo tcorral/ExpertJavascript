@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('First value of car.doors:', car.doors);
+        console.log('First value of car.wheels:', car.wheels);
+        car.doors = 5;
+        car.wheels = 5;
+        console.log('Value after redefining it to value 5 car.doors:', car.doors);
+        console.log('Value after redefining it to value 5 car.wheels:', car.wheels);
+        console.log('Can I delete car.doors property?', delete car.doors);
+        console.log('Can I delete car.wheels property?', delete car.wheels);
+        console.log('Which value has after deleting car.doors?', car.doors);
+        console.log('Which value has after deleting car.wheels?', car.wheels);
+        Object.defineProperty(car, 'doors', {
+            configurable: true,
+            value: 6
+        });
+        console.log('Value of car.doors after defining it again with value 6:', car.doors);
+        Object.defineProperty(car, 'wheels', {
+            configurable: true,
+            value: 4
+        });
+        console.log('Value of car.wheels after defining it again with value 6:', car.wheels);
+    </script>
+</body>
+</html>

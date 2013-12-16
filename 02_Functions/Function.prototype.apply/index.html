@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log( 'Am I warm?', me.isWarm() );
+        try {
+            me.useSweater( 100 );
+        }catch( e ){
+            console.log( e.message );
+        }
+        console.log( 'Borrow useSweater function from friend using apply' );
+        friend.useSweater.apply( me, [100] );
+        console.log( 'Am I warm?', me.isWarm() );
+    </script>
+</body>
+</html>

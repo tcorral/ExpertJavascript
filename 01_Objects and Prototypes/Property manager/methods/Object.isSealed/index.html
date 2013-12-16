@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Check if ziplockBag is sealed:', Object.isSealed(ziplockBag));
+        console.log('Check if ziplockBag is extensible:', Object.isExtensible(ziplockBag));
+        console.log('Seal ziplockBag.');
+        Object.seal(ziplockBag);
+        console.log('Check if ziplockBag is sealed:', Object.isSealed(ziplockBag));
+        console.log('Check if ziplockBag is extensible:', Object.isExtensible(ziplockBag));
+    </script>
+</body>
+</html>

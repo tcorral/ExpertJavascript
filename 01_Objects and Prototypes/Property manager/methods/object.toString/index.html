@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Get obj as string:', (obj + ''));
+        console.log('Overwrite toString method to return "this is a test"');
+        obj.toString = function()
+        {
+          return 'this is a test';
+        };
+        console.log('Get obj as string:', (obj + ''));n
+    </script>
+</body>
+</html>

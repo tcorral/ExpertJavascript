@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Open the console to see the results</h1>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Check if envelope is sealed:', Object.isSealed(envelope));
+        console.log('Seal envelope object');
+        Object.seal(envelope);
+        console.log('Check if envelope is sealed:', Object.isSealed(envelope));
+        console.log('Modify envelope.letter value');
+        envelope.letter = 'Oh Hai';
+        console.log('Add envelope.stamped property');
+        envelope.stamped = true;
+        console.log('Get envelope.letter value:', envelope.letter);
+        console.log('Get envelope.stamped value:', envelope.stamped);
+    </script>
+</body>
+</html>
